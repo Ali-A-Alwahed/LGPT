@@ -1,0 +1,605 @@
+# LGPT License v1.0
+
+## Professional Software License — Freedom, Attribution, Privacy and Commercial Use
+
+------------------------------------------------------------------------
+
+**Developer: Ali A Alwahed**
+**GitHub Profile: https://github.com/Ali-A-2026**
+
+**Organization: Sonzaistudios**
+**Website: https://sonzaistudios.org**
+
+**Copyright (c) 2026 LGPT v1.0 All rights reserved**
+**GitHub Link: https://github.com/Ali-A-2026/LGPT**
+
+------------------------------------------------------------------------
+
+> **NOTE:** When using this license in your project, keep this file unchanged.
+> Do not modify the license text. Attribution should be provided in your
+> project's documentation, About dialog, Credits, or NOTICE file.
+
+------------------------------------------------------------------------
+
+## 1. Introduction
+
+The LGPT License is a software license created by **Ali A Alwahed** to
+provide broad freedom to use, copy, study, modify, integrate, publish,
+redistribute, and commercially exploit software, while preserving the
+identity, copyright notices, and attribution of the original creator.
+
+LGPT is designed to support:
+
+- Personal and educational use.
+- Research and development.
+- Commercial and non-commercial software.
+- Open-source, source-available, and closed-source applications.
+- Libraries, frameworks, SDKs, plugins, tools, games, services, and
+  embedded software.
+- Independent forks and modified distributions.
+
+This license is intended to grant practical software freedom without
+requiring a downstream project to publish its private or proprietary source
+code.
+
+**Software freedom in this license refers to freedom of use and modification,
+not to software being free of charge.**
+
+------------------------------------------------------------------------
+
+## 2. Definitions
+
+For this license:
+
+**"Software"** means the original software, source code, object code,
+documentation, examples, assets, or other material explicitly released under
+the LGPT License.
+
+**"Original Work"** means the Software as published by the copyright holder
+under the LGPT License.
+
+**"Modified Version"** means a version of the Software containing changes,
+adaptations, translations, additions, deletions, or other modifications.
+
+**"Derivative Work"** means a work that is based on or incorporates a
+substantial copyrightable portion of the Original Work, as determined by
+applicable law.
+
+**"Redistribute"** means to provide copies of the Software or a Modified
+Version to another person or organization, whether free of charge or for a
+fee.
+
+**"LGPT Components"** means the parts of a project that are specifically
+identified as being licensed under the LGPT License.
+
+------------------------------------------------------------------------
+
+## 3. Grant of Freedom
+
+Subject to the conditions of this license, permission is granted, free of
+charge and worldwide, to any person or organization obtaining the Software
+to:
+
+1. Use the Software for any purpose.
+2. Run the Software on any compatible device, operating system, platform,
+   environment, or infrastructure.
+3. Copy the Software.
+4. Study and inspect the source code when source code is provided.
+5. Modify the Software.
+6. Create forks and derivative works.
+7. Integrate the Software into other projects.
+8. Link the Software statically or dynamically, where technically possible.
+9. Use the Software as a library, framework, SDK, plugin, module, service,
+   or embedded component.
+10. Redistribute original or modified copies.
+11. Distribute Software commercially or non-commercially.
+12. Sell copies, products, services, support, hosting, or applications that
+    contain or use the Software.
+13. Sublicense portions of a larger combined work to the extent allowed by
+    applicable law and provided that the LGPT-covered portions remain
+    properly attributed.
+14. Make private modifications without publishing those modifications.
+
+No fee, royalty, subscription, or payment to the original author is required
+merely because the Software is used, modified, linked, or redistributed under
+this license.
+
+------------------------------------------------------------------------
+
+## 4. No Field-of-Use Restriction
+
+LGPT does not restrict the field of use of the Software.
+
+The Software may be used in commercial, scientific, educational, industrial,
+governmental, personal, entertainment, server, cloud, embedded, development,
+security, or other fields, subject to applicable law.
+
+The copyright holder does not require approval for ordinary use of the
+Software.
+
+------------------------------------------------------------------------
+
+## 5. Redistribution and Copying
+
+You may redistribute the Original Work or a Modified Version in source or
+binary form.
+
+You may charge any price you choose for a copy, distribution service,
+support contract, hosted service, or product containing the Software.
+
+Redistribution does not require payment of royalties to the copyright holder.
+
+When redistributing LGPT-covered material, you must preserve the required
+copyright and license notices described in Sections 6 and 7.
+
+------------------------------------------------------------------------
+
+## 6. Attribution Requirement
+
+A project containing LGPT-covered material must preserve reasonable and
+conspicuous attribution to the original work.
+
+At minimum, the following notice must be retained in the project's
+documentation, legal notices, NOTICE file, About dialog, or another
+reasonable location appropriate to the type of software:
+
+    This project contains software licensed under the LGPT License v1.0.
+
+    Developer:
+    Ali A Alwahed
+
+    GitHub Profile:
+    https://github.com/Ali-A-2026
+
+    Organization:
+    Sonzaistudios
+
+    Website:
+    https://sonzaistudios.org
+
+    License:
+    LGPT License v1.0
+
+    GitHub Link:
+    https://github.com/Ali-A-2026/LGPT
+    
+    Special Thanks:
+    Ali A Alwahed for creating the LGPT License and establishing the
+    licensing framework used by this software.
+
+For small libraries, embedded components, command-line tools, or environments
+where a full notice is impractical, the attribution may be provided in a
+standard LICENSE, NOTICE, AUTHORS, About, credits, or legal-notices
+mechanism appropriate to that software.
+
+Attribution must not be presented in a way that falsely suggests endorsement
+of the new project by the original developer.
+
+------------------------------------------------------------------------
+
+## 7. Copyright and License Notices
+
+You must not remove or intentionally obscure copyright notices, license
+notices, or other notices that identify the Original Work.
+
+You may add your own copyright notices, author information, trademarks,
+credits, and modification notices.
+
+Original notices may be moved to another reasonable file or legal-notices
+location when necessary for technical reasons, provided that they remain
+reasonably accessible to recipients.
+
+------------------------------------------------------------------------
+
+## 8. Modification and Fork Rights
+
+Modified versions and independent forks are expressly permitted.
+
+A Modified Version must:
+
+1. Preserve the applicable LGPT copyright and license notices.
+2. State that the Software has been modified when the changes are
+   substantial.
+3. Avoid presenting modifications as the unchanged Original Work.
+4. Preserve the required attribution described in this license.
+
+There is no requirement to obtain permission from Ali A Alwahed before
+creating, publishing, or maintaining a fork.
+
+Contributors to a Modified Version may add their own copyright notices for
+their original contributions.
+
+------------------------------------------------------------------------
+
+## 9. Closed-Source and Proprietary Software
+
+LGPT-covered Software may be included in closed-source, proprietary,
+commercial, private, or otherwise non-public applications.
+
+Using an LGPT library or component does **not**, by itself, require the
+application that uses it to publish its source code.
+
+A distributor may keep its own independent source code, proprietary
+algorithms, business logic, application code, or unrelated components
+private.
+
+The LGPT-covered component remains subject to this license.
+
+------------------------------------------------------------------------
+
+## 10. Libraries, Linking and Replacement
+
+LGPT-covered libraries may be used as:
+
+- Static libraries.
+- Dynamic/shared libraries.
+- Frameworks.
+- SDKs.
+- Plugins.
+- Modules.
+- Runtime components.
+- Embedded libraries.
+
+Nothing in this license requires a proprietary application to become
+LGPT-licensed merely because it links to or uses an LGPT-covered library.
+
+A distributor must not intentionally add technical restrictions whose sole
+purpose is to prevent lawful recipients from exercising rights expressly
+granted by this license with respect to the LGPT-covered component.
+
+This does not prohibit:
+
+- Ordinary application security.
+- Code signing.
+- Cryptographic integrity checks.
+- Anti-tamper systems protecting unrelated proprietary material.
+- Platform security requirements.
+- Network security controls.
+- Measures required by law.
+
+------------------------------------------------------------------------
+
+## 11. Freedom to Modify and Repair
+
+Recipients may modify LGPT-covered Software for debugging, maintenance,
+performance improvements, accessibility, security research, interoperability,
+compatibility, experimentation, or other lawful purposes.
+
+Recipients may create private or public patches and forks.
+
+No permission from the original developer is required to make private
+modifications.
+
+When a modified version is redistributed, the requirements of this license
+for attribution and modification notices apply.
+
+------------------------------------------------------------------------
+
+## 12. Privacy and Personal Data
+
+The LGPT License grants rights to the Software. It does **not** grant a
+separate right to collect, sell, disclose, track, profile, or otherwise
+process a user's personal data.
+
+The license does not require:
+
+- Telemetry.
+- Advertising identifiers.
+- User tracking.
+- Data collection.
+- Account creation.
+- Remote monitoring.
+- Analytics.
+- Transmission of personal information.
+
+Any privacy, telemetry, analytics, data-processing, or network behavior of a
+particular distribution must be determined by that distribution's actual
+implementation and applicable law.
+
+A distributor must not falsely claim that the original developer or
+Sonzaistudios requires telemetry, tracking, registration, or personal-data
+collection merely because software is licensed under LGPT.
+
+Users retain their rights in their own data to the extent provided by
+applicable law. This license does not transfer ownership of user-created
+data, files, documents, credentials, media, or personal information to the
+copyright holder.
+
+------------------------------------------------------------------------
+
+## 13. Security, Inspection and Transparency
+
+Nothing in this license prohibits lawful security research, code inspection,
+debugging, vulnerability analysis, interoperability testing, or defensive
+security work involving the LGPT-covered Software.
+
+The copyright holder does not represent that the Software is secure or
+vulnerability-free.
+
+Security mechanisms added by a distributor for protecting unrelated
+proprietary material are permitted, provided they do not falsely represent
+that LGPT itself requires those restrictions.
+
+------------------------------------------------------------------------
+
+## 14. User Interface and Legal Notice
+
+For software with a graphical or interactive user interface, the required
+LGPT attribution may be displayed in a normal:
+
+- About dialog.
+- Credits page.
+- Legal notices page.
+- Settings/About section.
+- Documentation page.
+
+A distributor is not required to display the attribution continuously during
+normal operation.
+
+------------------------------------------------------------------------
+
+## 15. Patents
+
+To the extent the copyright holder has the legal right to do so, the
+copyright holder grants recipients a worldwide, non-exclusive, royalty-free
+patent license to make, have made, use, offer to sell, sell, import, and
+otherwise exercise the patent claims necessarily infringed by the Original
+Work as released under this license.
+
+This patent grant does not apply to claims caused solely by:
+
+- Modifications made by a recipient.
+- Combining the Software with unrelated technology.
+- Uses outside the scope of the Software as originally released.
+
+If a recipient initiates patent litigation alleging that the LGPT-covered
+Software itself infringes a patent, the patent permissions granted to that
+recipient under this section may terminate to the extent permitted by law.
+
+------------------------------------------------------------------------
+
+## 16. Third-Party Software
+
+The LGPT License applies only to material actually released under LGPT.
+
+Third-party libraries, dependencies, assets, fonts, models, codecs, drivers,
+data, or other components may be governed by their own licenses.
+
+Nothing in LGPT grants rights that the copyright holder does not own.
+
+Recipients are responsible for complying with applicable third-party
+licenses when redistributing combined software.
+
+------------------------------------------------------------------------
+
+## 17. Trademarks and Names
+
+This license does not grant permission to use:
+
+- Ali A Alwahed
+- Sonzaistudios
+- LGPT
+- LGPT License
+
+as trademarks, service marks, product names, or endorsements in a manner that
+suggests official approval, sponsorship, or affiliation, except for truthful
+attribution and descriptive references required or permitted by this license.
+
+Forks and modified versions may use their own project names and branding.
+
+------------------------------------------------------------------------
+
+## 18. No Forced Endorsement
+
+No recipient may imply that Ali A Alwahed or Sonzaistudios endorses,
+certifies, guarantees, sponsors, or officially supports a modified version
+unless separate permission has been granted.
+
+This restriction concerns endorsement and branding only; it does not limit
+the freedom to create, modify, distribute, or commercially use the Software.
+
+------------------------------------------------------------------------
+
+## 19. No Additional Restrictions on LGPT Rights
+
+You may not impose contractual or technical conditions on recipients of an
+LGPT-covered copy that are intended to remove or materially prevent the
+rights expressly granted by this license.
+
+This section does not prevent you from imposing reasonable terms on:
+
+- Your own independent software.
+- Your own proprietary code.
+- Support services.
+- Hosting services.
+- Separate commercial agreements.
+- Trademarks and branding that you own.
+- Security requirements that protect unrelated material.
+- Requirements imposed by applicable law.
+
+------------------------------------------------------------------------
+
+## 20. Distribution Without Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, ACCURACY, RELIABILITY,
+AVAILABILITY, OR SECURITY.
+
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ALI A ALWAHED AND
+SONZAISTUDIOS SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, CONSEQUENTIAL, OR OTHER DAMAGES, INCLUDING LOSS OF DATA,
+LOSS OF PROFITS, BUSINESS INTERRUPTION, SECURITY INCIDENTS, OR SYSTEM
+FAILURE, ARISING FROM OR RELATED TO THE SOFTWARE OR ITS USE, MODIFICATION,
+DISTRIBUTION, OR INTEGRATION.
+
+Nothing in this license is intended to exclude liability where such
+exclusion is prohibited by applicable law.
+
+------------------------------------------------------------------------
+
+## 21. License Termination
+
+Rights under this license terminate automatically if a recipient materially
+and intentionally violates the license.
+
+Termination affects only the rights of the violating party.
+
+If the violation is corrected, the copyright holder may restore the rights.
+
+A recipient who receives the Software from another authorized distributor
+does not lose rights merely because another unrelated person violated this
+license.
+
+Termination does not revoke rights that were validly granted to other
+recipients before termination, except where applicable law provides
+otherwise.
+
+------------------------------------------------------------------------
+
+## 22. No Warranty of Support or Updates
+
+The LGPT License does not require the original developer to provide:
+
+- Technical support.
+- Security updates.
+- Bug fixes.
+- New versions.
+- Compatibility updates.
+- Maintenance.
+- Hosting.
+- Documentation updates.
+
+Any such services may be offered separately under terms chosen by the
+provider.
+
+------------------------------------------------------------------------
+
+## 23. International Use
+
+LGPT grants rights on a worldwide basis to the extent permitted by applicable
+law.
+
+Recipients are responsible for complying with laws and regulations that
+apply to their own activities and jurisdiction.
+
+Nothing in this license is intended to require a party to violate applicable
+law.
+
+------------------------------------------------------------------------
+
+## 24. Severability
+
+If any provision of this license is determined to be invalid or
+unenforceable, the remaining provisions shall remain in effect to the
+maximum extent permitted by law.
+
+------------------------------------------------------------------------
+
+## 25. No Waiver
+
+Failure by the copyright holder to enforce a provision of this license does
+not constitute a permanent waiver of that provision.
+
+A waiver must be expressed by the copyright holder to be effective.
+
+------------------------------------------------------------------------
+
+## 26. Entire License
+
+This document states the license terms for the LGPT-covered Software unless
+a separate written agreement, signed by the copyright holder, expressly
+supersedes or adds to these terms for a particular distribution.
+
+Additional permissions may be granted by the copyright holder in writing.
+
+No informal statement, README comment, issue discussion, or third-party
+website changes the license unless the copyright holder expressly adopts
+that change.
+
+------------------------------------------------------------------------
+
+## 27. Recommended Project Files
+
+Projects distributing LGPT-covered Software are recommended to include:
+
+    LICENSE
+    NOTICE
+    AUTHORS
+    README.md
+
+A project may use additional files such as:
+
+    THIRD-PARTY-NOTICES
+    COPYRIGHT
+    CONTRIBUTORS
+    CHANGELOG.md
+
+------------------------------------------------------------------------
+
+## 28. Suggested Source Header
+
+For source files released under LGPT:
+
+```text
+Copyright (c) 2026 Ali A Alwahed
+Licensed under the LGPT License v1.0
+See LICENSE for the full license text.
+```
+
+------------------------------------------------------------------------
+
+## 29. License Identity
+
+**License Name:** LGPT License  
+**Version:** 1.0  
+**Copyright Holder:** Ali A Alwahed  
+**Organization:** Sonzaistudios  
+**Website:** https://sonzaistudios.org  
+**GitHub:** https://github.com/Ali-A-2026/LGPT
+
+------------------------------------------------------------------------
+
+## 30. Philosophy
+
+LGPT is intended to provide a practical balance between software freedom
+and creator recognition.
+
+The core principles are:
+
+**Freedom to use.**  
+**Freedom to modify.**  
+**Freedom to fork.**  
+**Freedom to integrate.**  
+**Freedom to distribute.**  
+**Freedom to use commercially.**  
+**Freedom to keep independent proprietary code private.**  
+**Respect for copyright and attribution.**  
+**Respect for user privacy.**  
+**No mandatory telemetry.**  
+**No forced endorsement.**  
+**No transfer of ownership of user data.**
+
+------------------------------------------------------------------------
+
+## 31. Notice
+
+This license is an original license authored by Ali A Alwahed. It is inspired
+by common concepts found across permissive and copyleft software licensing,
+including ideas relating to software freedom, attribution, linking,
+termination, patent protection, privacy, and preservation of user rights.
+
+It is **not** the GNU General Public License, GNU Lesser General Public
+License, MIT License, Apache License, or any other third-party license.
+
+The wording of this license is intended to define the terms specific to LGPT.
+
+------------------------------------------------------------------------
+
+# LGPT License v1.0
+
+> "Freedom to use software while preserving the identity, contribution,
+> privacy, and recognition of the original creator."
+
+Copyright (c) 2026 Ali A Alwahed. All rights reserved, except for the rights
+expressly granted under the LGPT License v1.0.
