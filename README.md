@@ -5,12 +5,10 @@
 **Freedom · Flexibility · Attribution · Privacy**
 
 [![License: LGPT v1.0](https://img.shields.io/badge/License-LGPT%20v1.0-8A2BE2?style=for-the-badge)](LICENSE.txt)
-[![SPDX: LGPL-1.0](https://img.shields.io/badge/SPDX-LicenseRef-LGPT--1.0-blue?style=flat-square)](LICENSE.txt)
+[![SPDX: LicenseRef-LGPT-1.0](https://img.shields.io/badge/SPDX-LicenseRef-LGPT--1.0-blue?style=flat-square)](SPDX.md)
 [![GitHub Stars](https://img.shields.io/github/stars/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT)
 [![GitHub Forks](https://img.shields.io/github/forks/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT/forks)
 [![GitHub Issues](https://img.shields.io/github/issues/Ali-A-Alwahed/LGPT?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/issues)
-[![GitHub License](https://img.shields.io/github/license/Ali-A-Alwahed/LGPT?style=flat-square)](LICENSE.txt)
-[![Visitors](https://hitcounter.org/12,0,0,0/0/1/0/00/00/00/00/00/00/00/00/00/00.svg)](https://github.com/Ali-A-Alwahed/LGPT)
 
 > *Use it anywhere — open or closed, commercial or personal. Keep your own code
 > private. Just give credit.*
