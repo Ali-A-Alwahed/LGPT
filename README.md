@@ -132,18 +132,37 @@ These details matter more than the checkmarks:
 
 ## Three ways to adopt it
 
-### 1. Start a new project from the template
+### 1. Scaffold a new project
 
-The fastest path. Click below and GitHub creates a new repository already wired up with the license and all the recommended files.
-
-<div align="center">
-
-## 🚀 <a href="https://github.com/Ali-A-Alwahed/LGPT-template/generate">Use this template</a>
-
-</div>
+The fastest path. Generates a complete project — license, notice, community
+files, CI — already wired up with LGPT v1.0:
 
 ```bash
-gh repo create my-project --template Ali-A-Alwahed/LGPT-template --public
+curl -fsSL https://raw.githubusercontent.com/Ali-A-Alwahed/LGPT/main/scripts/generate-template.sh \
+  | bash -s -- -- my-project && cd my-project
+```
+
+That writes:
+
+```
+my-project/
+├── LICENSE.txt         the LGPT License v1.0
+├── NOTICE              attribution notice
+├── AUTHORS             creator and contributor record
+├── README.md           pre-wired with the badge
+├── CONTRIBUTING.md
+├── CODE_OF_CONDUCT.md
+├── SECURITY.md
+├── CHANGELOG.md
+├── .editorconfig
+├── .gitignore
+└── .github/workflows/ci.yml
+```
+
+Then:
+
+```bash
+git init && git add . && git commit -m "Initial commit"
 ```
 
 ### 2. Add it to an existing project with one command

@@ -196,8 +196,8 @@ No. That dropdown is a fixed, curated list. Custom licenses cannot be added to
 it, and there is no application process.
 
 If you are creating a repository and want LGPT from the start, use the
-[template repository](https://github.com/Ali-A-Alwahed/LGPT-template) or the
-installer.
+[project scaffold](ADOPTING.md#method-1-the-project-scaffold) or the
+[installer](ADOPTING.md#method-3-the-installer-script).
 
 ### Does it stop anyone from using it commercially, or from forking it?
 
@@ -225,8 +225,14 @@ Or use the [GitHub Action](ADOPTING.md#method-2-the-github-action). See
 
 ### How do I start a new project with it?
 
-Click **Use this template** on
-[LGPT-template](https://github.com/Ali-A-Alwahed/LGPT-template/generate).
+Generate the scaffold:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Ali-A-Alwahed/LGPT/main/scripts/generate-template.sh \
+  | bash -s -- my-project
+```
+
+See [ADOPTING.md](ADOPTING.md#method-1-the-project-scaffold).
 
 ### I want to contribute a translation or clarification.
 

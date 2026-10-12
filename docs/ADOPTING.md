@@ -5,56 +5,75 @@ often you should reach for them.
 
 | | Method | Best for |
 |---|---|---|
-| 1 | [Template repository](#method-1-the-template-repository) | Starting a brand-new project |
+| 1 | [Project scaffold](#method-1-the-project-scaffold) | Starting a brand-new project |
 | 2 | [GitHub Action](#method-2-the-github-action) | Automating it in CI |
 | 3 | [Installer script](#method-3-the-installer-script) | Adding it to an existing project by hand |
 
-All three write the same two files and verify the same SHA-256 digest.
+All three verify the same SHA-256 digest before writing anything.
 
 ---
 
-## Method 1: the template repository
+## Method 1: the project scaffold
 
 The fastest path for a new project.
 
-<div align="center">
-
-## 🚀 <a href="https://github.com/Ali-A-Alwahed/LGPT-template/generate">Use this template</a>
-
-</div>
-
-**In the browser:** click the link above. GitHub opens the repo creation page
-with everything pre-populated. Name your repo and click *Create repository from
-template*.
-
-**From the CLI:**
-
 ```bash
-gh repo create my-project --template Ali-A-Alwahed/LGPT-template --public
+curl -fsSL https://raw.githubusercontent.com/Ali-A-Alwahed/LGPT/main/scripts/generate-template.sh \
+  | bash -s -- my-project
 ```
 
-You get a repository containing:
+Or from a clone:
+
+```bash
+bash scripts/generate-template.sh my-project
+```
+
+It accepts multiple directories at once:
+
+```bash
+generate-template.sh api-gateway worker web-app
+```
+
+You get:
 
 ```
 my-project/
-├── LICENSE.txt      the LGPT License v1.0
-├── NOTICE           attribution notice
-├── AUTHORS          creator and contributor record
-├── README.md        project readme, pre-wired with the badge
+├── LICENSE.txt         the LGPT License v1.0
+├── NOTICE              attribution notice
+├── AUTHORS             creator and contributor record
+├── README.md           pre-wired with the badge
 ├── CONTRIBUTING.md
 ├── CODE_OF_CONDUCT.md
 ├── SECURITY.md
 ├── CHANGELOG.md
-└── .gitignore
+├── .editorconfig
+├── .gitignore
+└── .github/workflows/ci.yml
 ```
 
 Then:
 
 ```bash
 cd my-project
-git remote remove origin
-git add .
-git commit -m "Initial commit"
+git init && git add . && git commit -m "Initial commit"
+```
+
+The generated `ci.yml` verifies `LICENSE.txt` is unmodified on every push, and
+contains a clearly marked `hello` job to replace with your real checks.
+
+### Safety properties
+
+- Downloads the license over HTTPS and **verifies the SHA-256** before writing.
+- **Refuses a non-empty target directory.** Nothing is overwritten.
+- The generated `LICENSE.txt` is byte-identical to the canonical text, so the
+  CI check in every scaffolded project passes.
+
+### Options
+
+```
+generate-template.sh <directory> [more-directories...]
+-h, --help       show help
+-v, --version    print the license version
 ```
 
 ---

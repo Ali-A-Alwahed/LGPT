@@ -75,6 +75,33 @@ for link in docs/FAQ.md docs/ADOPTING.md docs/COMPARISON.md LICENSE.txt LICENSE-
     if grep -qE "\]\((\./)?${link//./\\.}\)" README.md; then ok "README links $link"; else no "README does not link $link"; fi
 done
 
+head_ "No dead references"
+# Scoped to documentation: this check must not match its own source text.
+if git grep -nI -e "Ali-A-Alwahed/LGPT-template" -- '*.md' >/dev/null 2>&1; then
+    no "a reference to the removed LGPT-template repo is still present in the docs"
+    git grep -nI -e "Ali-A-Alwahed/LGPT-template" -- '*.md' | sed 's/^/      /'
+else
+    ok "no documentation references the removed LGPT-template repo"
+fi
+
+head_ "Relative links resolve"
+while read -r target; do
+    [ -z "$target" ] && continue
+    if [ -e "$target" ]; then
+        ok "README link target exists: $target"
+    else
+        no "README link target is missing: $target"
+    fi
+done < <(grep -oE '\]\((\./)?(docs/)?[A-Za-z0-9_.-]+\.md\)' README.md 2>/dev/null \
+    | sed -E 's/^\]\(\.?\/?//; s/\)$//' | sort -u)
+
+head_ "Scaffold generator"
+if bash -n scripts/generate-template.sh 2>/dev/null; then
+    ok "generate-template.sh syntax valid"
+else
+    no "generate-template.sh syntax error"
+fi
+
 head_ "No leaked credentials"
 if git grep -nIE "(gho_|ghp_|github_pat_)[A-Za-z0-9_]{16,}" -- . >/dev/null 2>&1; then
     no "a GitHub token appears to be committed in the working tree"
