@@ -84,16 +84,34 @@ else
     ok "no documentation references the removed LGPT-template repo"
 fi
 
-head_ "Relative links resolve"
-while read -r target; do
-    [ -z "$target" ] && continue
-    if [ -e "$target" ]; then
-        ok "README link target exists: $target"
-    else
-        no "README link target is missing: $target"
+head_ "README links"
+# Relative file links break whenever GitHub renders this README somewhere other
+# than this repo (forks, mirrors, profile pages) — they resolve against whatever
+# repo is being viewed and 404. Anchors must stay relative; everything else must
+# be an absolute canonical URL.
+if grep -oE '\]\([^)#h][^)]*\)' README.md 2>/dev/null | grep -q .; then
+    no "README contains relative file links, which 404 outside this repo"
+    grep -oE '\]\([^)#h][^)]*\)' README.md | sort -u | sed 's/^/      /'
+else
+    ok "no relative file links in README"
+fi
+
+MISSING=""
+while read -r url; do
+    [ -z "$url" ] && continue
+    path="${url#https://github.com/Ali-A-Alwahed/LGPT/blob/main/}"
+    if [ ! -e "$path" ]; then
+        MISSING="$MISSING\n      $url"
     fi
-done < <(grep -oE '\]\((\./)?(docs/)?[A-Za-z0-9_.-]+\.md\)' README.md 2>/dev/null \
-    | sed -E 's/^\]\(\.?\/?//; s/\)$//' | sort -u)
+done < <(grep -oE '\]\(https://github\.com/Ali-A-Alwahed/LGPT/blob/main/[^)]+\)' README.md 2>/dev/null \
+    | sed -E 's/^\]\(//; s/\)$//' | sort -u)
+
+if [ -n "$MISSING" ]; then
+    no "README links to files that do not exist in the repo:"
+    printf "%b\n" "$MISSING"
+else
+    ok "every canonical README link target exists in the repo"
+fi
 
 head_ "Scaffold generator"
 if bash -n scripts/generate-template.sh 2>/dev/null; then

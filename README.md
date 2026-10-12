@@ -4,8 +4,8 @@
 
 **Freedom · Flexibility · Attribution · Privacy**
 
-[![License: LGPT v1.0](https://img.shields.io/badge/License-LGPT%20v1.0-8A2BE2?style=for-the-badge)](LICENSE.txt)
-[![SPDX: LicenseRef-LGPT-1.0](https://img.shields.io/badge/SPDX-LicenseRef-LGPT--1.0-blue?style=flat-square)](SPDX.md)
+[![License: LGPT v1.0](https://img.shields.io/badge/License-LGPT%20v1.0-8A2BE2?style=for-the-badge)](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE.txt)
+[![SPDX: LicenseRef-LGPT-1.0](https://img.shields.io/badge/SPDX-LicenseRef-LGPT--1.0-blue?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/blob/main/SPDX.md)
 [![GitHub Stars](https://img.shields.io/github/stars/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT)
 [![GitHub Forks](https://img.shields.io/github/forks/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT/forks)
 [![GitHub Issues](https://img.shields.io/github/issues/Ali-A-Alwahed/LGPT?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/issues)
@@ -13,7 +13,7 @@
 > *Use it anywhere — open or closed, commercial or personal. Keep your own code
 > private. Just give credit.*
 
-[**Read the license**](LICENSE.txt) · [**FAQ**](docs/FAQ.md) · [**Comparison**](docs/COMPARISON.md) · [**Adopt it**](docs/ADOPTING.md)
+[**Read the license**](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE.txt) · [**FAQ**](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/FAQ.md) · [**Comparison**](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/COMPARISON.md) · [**Adopt it**](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/ADOPTING.md)
 
 </div>
 
@@ -195,7 +195,7 @@ jobs:
 
 This is a zero-dependency action written against Node built-ins only — no `node_modules`, no supply-chain surface, and it can be pinned to a commit SHA.
 
-See **[docs/ADOPTING.md](docs/ADOPTING.md)** for all three in detail.
+See **[docs/ADOPTING.md](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/ADOPTING.md)** for all three in detail.
 
 ---
 
@@ -277,17 +277,17 @@ Renders as:
 
 | File | Purpose |
 |---|---|
-| [`LICENSE.txt`](LICENSE.txt) | The license text. **Do not modify.** |
-| [`NOTICE`](NOTICE) | Attribution notice template |
-| [`AUTHORS`](AUTHORS) | Creator and contributor record |
-| [`SPDX.md`](SPDX.md) | SPDX metadata and licensing identifier |
-| [`scripts/install-lgpt.sh`](scripts/install-lgpt.sh) | One-command installer |
-| [`action.yml`](action.yml) | GitHub Action definition |
-| [`docs/ADOPTING.md`](docs/ADOPTING.md) | Detailed adoption guide |
-| [`docs/COMPARISON.md`](docs/COMPARISON.md) | Long-form comparison with other licenses |
-| [`docs/FAQ.md`](docs/FAQ.md) | Common questions |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) | How to contribute to this repo |
-| [`LICENSE.txt` checksum](SHA256SUMS) | Integrity verification for the license text |
+| [`LICENSE.txt`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE.txt) | The license text. **Do not modify.** |
+| [`NOTICE`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/NOTICE) | Attribution notice template |
+| [`AUTHORS`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/AUTHORS) | Creator and contributor record |
+| [`SPDX.md`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/SPDX.md) | SPDX metadata and licensing identifier |
+| [`scripts/install-lgpt.sh`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/scripts/install-lgpt.sh) | One-command installer |
+| [`action.yml`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/action.yml) | GitHub Action definition |
+| [`docs/ADOPTING.md`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/ADOPTING.md) | Detailed adoption guide |
+| [`docs/COMPARISON.md`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/COMPARISON.md) | Long-form comparison with other licenses |
+| [`docs/FAQ.md`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/FAQ.md) | Common questions |
+| [`CONTRIBUTING.md`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/CONTRIBUTING.md) | How to contribute to this repo |
+| [`LICENSE.txt` checksum](https://github.com/Ali-A-Alwahed/LGPT/blob/main/SHA256SUMS) | Integrity verification for the license text |
 
 ---
 
@@ -320,7 +320,7 @@ No. No registration, no approval, no CLA. Use it today.
 **What if my company blocks unapproved licenses?**
 That is a policy decision on their side, not a defect in the license. Apache-2.0 or MIT will pass; LGPT will not. Nothing in this license requires you to misrepresent it as something it is not.
 
-More in **[docs/FAQ.md](docs/FAQ.md)**.
+More in **[docs/FAQ.md](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/FAQ.md)**.
 
 ---
 
@@ -328,7 +328,7 @@ More in **[docs/FAQ.md](docs/FAQ.md)**.
 
 Contributions are welcome — clarifications, translations, legal review,
 real-world adoption reports, and tooling. See
-[CONTRIBUTING.md](CONTRIBUTING.md).
+[CONTRIBUTING.md](https://github.com/Ali-A-Alwahed/LGPT/blob/main/CONTRIBUTING.md).
 
 **Important:** the license text in `LICENSE.txt` is the canonical document.
 Any PR that modifies it must be intentional, discussed in an issue first, and
@@ -347,10 +347,10 @@ will bump the version number.
 
 ## ⚖️ License
 
-The license text in [`LICENSE.txt`](LICENSE.txt) is licensed under
+The license text in [`LICENSE.txt`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE.txt) is licensed under
 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) so it can be freely
 copied and shared. The accompanying tooling, Action, and installer script are
-licensed under the MIT License — see [`LICENSE-MIT.txt`](LICENSE-MIT.txt).
+licensed under the MIT License — see [`LICENSE-MIT.txt`](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE-MIT.txt).
 
 <div align="center">
 
