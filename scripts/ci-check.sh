@@ -70,6 +70,30 @@ if grep -q "LGPT License v1.0" LICENSE.txt; then ok "LICENSE.txt has the expecte
 SECTIONS="$(grep -c '^## [0-9]\+\.' LICENSE.txt || true)"
 if [ "$SECTIONS" -eq 31 ]; then ok "31 numbered sections present"; else no "expected 31 sections, found $SECTIONS"; fi
 
+head_ "Badge images render"
+# shields.io returns HTTP 200 even when it cannot parse a badge path — it draws
+# "404 badge not found" into the SVG instead. Checking status codes alone lets a
+# broken badge ship, so inspect the rendered body too.
+BAD_BADGES=""
+while read -r url; do
+    [ -z "$url" ] && continue
+    body="$(curl -fsS --max-time 20 "$url" 2>/dev/null || true)"
+    if [ -z "$body" ]; then
+        BAD_BADGES="${BAD_BADGES:+$BAD_BADGES\n}      $url  (no response)"
+    elif printf '%s' "$body" | grep -qiE 'badge not found|"404"|<title>404'; then
+        BAD_BADGES="${BAD_BADGES:+$BAD_BADGES\n}      $url  (renders a 404 badge)"
+    fi
+done < <(grep -rhoE 'https://img\.shields\.io/[^)"]+' \
+    README.md docs/*.md CONTRIBUTING.md AUTHORS 2>/dev/null | sort -u)
+
+if [ -n "$BAD_BADGES" ]; then
+    no "one or more badge images do not render:"
+    printf "%b\n" "$BAD_BADGES"
+    printf '      note: a literal hyphen in badge text must be escaped as --\n'
+else
+    ok "every shields.io badge renders a real image"
+fi
+
 head_ "No dead references"
 # Scoped to documentation: this check must not match its own source text.
 if git grep -nI -e "Ali-A-Alwahed/LGPT-template" -- '*.md' >/dev/null 2>&1; then

@@ -5,7 +5,7 @@
 **Freedom · Flexibility · Attribution · Privacy**
 
 [![License: LGPT v1.0](https://img.shields.io/badge/License-LGPT%20v1.0-8A2BE2?style=for-the-badge)](https://github.com/Ali-A-Alwahed/LGPT/blob/main/LICENSE.txt)
-[![SPDX: LicenseRef-LGPT-1.0](https://img.shields.io/badge/SPDX-LicenseRef-LGPT--1.0-blue?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/blob/main/SPDX.md)
+[![SPDX: LicenseRef-LGPT-1.0](https://img.shields.io/badge/SPDX-LicenseRef--LGPT--1.0-blue?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/blob/main/SPDX.md)
 [![GitHub Stars](https://img.shields.io/github/stars/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT)
 [![GitHub Forks](https://img.shields.io/github/forks/Ali-A-Alwahed/LGPT?style=social)](https://github.com/Ali-A-Alwahed/LGPT/forks)
 [![GitHub Issues](https://img.shields.io/github/issues/Ali-A-Alwahed/LGPT?style=flat-square)](https://github.com/Ali-A-Alwahed/LGPT/issues)
