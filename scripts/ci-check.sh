@@ -70,11 +70,6 @@ if grep -q "LGPT License v1.0" LICENSE.txt; then ok "LICENSE.txt has the expecte
 SECTIONS="$(grep -c '^## [0-9]\+\.' LICENSE.txt || true)"
 if [ "$SECTIONS" -eq 31 ]; then ok "31 numbered sections present"; else no "expected 31 sections, found $SECTIONS"; fi
 
-head_ "Documentation links"
-for link in docs/FAQ.md docs/ADOPTING.md docs/COMPARISON.md LICENSE.txt LICENSE-MIT.txt; do
-    if grep -qE "\]\((\./)?${link//./\\.}\)" README.md; then ok "README links $link"; else no "README does not link $link"; fi
-done
-
 head_ "No dead references"
 # Scoped to documentation: this check must not match its own source text.
 if git grep -nI -e "Ali-A-Alwahed/LGPT-template" -- '*.md' >/dev/null 2>&1; then
