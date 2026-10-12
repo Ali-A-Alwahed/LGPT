@@ -1,0 +1,54 @@
+name: Tooling defect
+description: A bug in the installer, the Action, or the docs.
+labels: ["bug", "tooling"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Security issues belong in the [security advisory process](https://github.com/Ali-A-Alwahed/LGPT/security/advisories/new),
+        not in a public issue.
+  - type: dropdown
+    id: component
+    attributes:
+      label: Component
+      options:
+        - install-lgpt.sh
+        - GitHub Action
+        - Documentation
+        - Template repository
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Reproduction steps
+      description: Exact commands, and what you expected versus what happened.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, shell, and versions of curl/wget, node, git.
+      render: shell
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Security checkboxes
+      description: Only relevant for installer and Action reports.
+      options:
+        - label: This could let someone write outside the target directory.
+        - label: This could overwrite a file the tool should not overwrite.
+        - label: This bypasses checksum verification.
+        - label: This is exploitable via a malicious input or redirect.
+        - label: None of the above — this is a plain functional bug.

@@ -1,0 +1,20 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question or ambiguity about the license
+    url: https://github.com/Ali-A-Alwahed/LGPT/issues/new?template=question.yml
+    about: Ask how LGPT applies to your situation. Check the FAQ first.
+  - name: Bug in the license text
+    url: https://github.com/Ali-A-Alwahed/LGPT/issues/new?template=ambiguity.yml
+    about: Report unclear, conflicting, or harmful wording in LICENSE.txt.
+  - name: Bug in the installer or Action
+    url: https://github.com/Ali-A-Alwahed/LGPT/issues/new?template=tooling.yml
+    about: Report a functional or security defect in the tooling.
+  - name: Report a security vulnerability
+    url: https://github.com/Ali-A-Alwahed/LGPT/security/advisories/new
+    about: Report privately. Do not open a public issue.
+  - name: I adopted LGPT
+    url: https://github.com/Ali-A-Alwahed/LGPT/issues/new?template=adoption.yml
+    about: Tell us what happened. These reports are genuinely valuable.
+  - name: Contribute code or docs
+    url: https://github.com/Ali-A-Alwahed/LGPT/issues/new?template=contribution.yml
+    about: Propose a change to the tooling or documentation.

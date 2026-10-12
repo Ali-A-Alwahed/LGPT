@@ -1,0 +1,62 @@
+name: I adopted LGPT
+description: Tell us you are using it. This is genuinely useful.
+labels: ["adoption"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Adoption reports are the most valuable thing you can file here. They tell
+        the author what actually happens in practice, which is the only real
+        test of whether a license works.
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      description: Name and URL.
+      placeholder: my-awesome-tool — https://github.com/you/my-awesome-tool
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How did you adopt it?
+      options:
+        - Template repository
+        - GitHub Action
+        - Installer script
+        - Copied LICENSE.txt manually
+        - I'm an original author licensing my own work with it
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: How are you using it?
+      options:
+        - As my project's license
+        - As a dependency inside a larger product
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: frictions
+    attributes:
+      label: What was hard, confusing, or annoying?
+      description: |
+        This is the useful part. Did the tooling work? Did your legal team or
+        a package registry reject it? Did you have to guess at something?
+      placeholder: My company's compliance scanner flagged it as "unapproved" and I had to get an exception…
+    validations:
+      required: true
+  - type: textarea
+    id: good
+    attributes:
+      label: What worked well?
+      description: Equally useful. If something was unexpectedly good, say so.
+  - type: checkboxes
+    id: links
+    attributes:
+      label: Links
+      options:
+        - label: My project links back to https://github.com/Ali-A-Alwahed/LGPT
+        - label: My project includes the LGPT badge

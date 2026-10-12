@@ -1,0 +1,48 @@
+name: 'Add LGPT License'
+description: 'Add, verify, or remove the LGPT License v1.0 in your repository. Zero dependencies.'
+author: 'Ali A Alwahed'
+
+branding:
+  icon: 'shield'
+  color: 'purple'
+
+inputs:
+  license-file:
+    description: 'Path where the license text should be written.'
+    required: false
+    default: 'LICENSE.txt'
+  notice-file:
+    description: 'Path of the NOTICE file to create. Leave empty to skip.'
+    required: false
+    default: 'NOTICE'
+  project-name:
+    description: 'Project name used in the NOTICE file. Defaults to the repository name.'
+    required: false
+    default: ''
+  verify-checksum:
+    description: 'Verify the license text against the known SHA-256 digest.'
+    required: false
+    default: 'true'
+  overwrite:
+    description: 'Overwrite an existing license file even if it is not an LGPT license.'
+    required: false
+    default: 'false'
+  uninstall:
+    description: 'Remove the LGPT license and NOTICE files instead of adding them.'
+    required: false
+    default: 'false'
+
+outputs:
+  license-path:
+    description: 'Absolute path of the license file that was written.'
+    value: ${{ steps.lgpt.outputs.license-path }}
+  action:
+    description: 'One of: installed, already-present, upgraded, uninstalled, skipped, failed.'
+    value: ${{ steps.lgpt.outputs.action }}
+  checksum:
+    description: 'SHA-256 digest of the license text that was written.'
+    value: ${{ steps.lgpt.outputs.checksum }}
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'

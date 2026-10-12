@@ -1,0 +1,43 @@
+name: Question about the license
+description: Ask how LGPT applies to your situation.
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before filing: this may already be answered in
+        [the FAQ](https://github.com/Ali-A-Alwahed/LGPT/blob/main/docs/FAQ.md).
+        Searching existing issues helps too.
+
+        Please note we are not lawyers and cannot give legal advice.
+  - type: textarea
+    id: question
+    attributes:
+      label: Your question
+      description: What do you want to know?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Your situation
+      description: |
+        What are you building, and what makes this unclear? For example:
+        distributing on hardware, using it in a proprietary app, relicensing
+        your own project, corporate compliance review.
+      placeholder: I'm building a closed-source desktop app that links an LGPL-licensed library statically…
+    validations:
+      required: true
+  - type: textarea
+    id: cited
+    attributes:
+      label: Relevant section(s)
+      description: If you have already read a relevant section, say which.
+      placeholder: "§12, §17"
+  - type: checkboxes
+    id: searched
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the FAQ and existing issues.
+          required: true

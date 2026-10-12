@@ -1,0 +1,56 @@
+name: Ambiguity or defect in the license text
+description: Something in LICENSE.txt is unclear, wrong, or harmful.
+labels: ["bug", "license-text"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is for problems **with the wording**. To propose a change, open
+        a discussion first — see [CONTRIBUTING.md](https://github.com/Ali-A-Alwahed/LGPT/blob/main/CONTRIBUTING.md).
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Which numbered section?
+      placeholder: "§12"
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of problem?
+      options:
+        - Ambiguous — can be read more than one way
+        - Incomplete — a case is not covered
+        - Conflicting — contradicts another section
+        - Consequential — would cause real harm as written
+        - Typo or formatting
+    validations:
+      required: true
+  - type: textarea
+    id: reading_a
+    attributes:
+      label: Reading A
+      description: One way to interpret it.
+    validations:
+      required: true
+  - type: textarea
+    id: reading_b
+    attributes:
+      label: Reading B
+      description: The competing interpretation.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Practical impact
+      description: Who gets hurt, and how? Be concrete.
+      placeholder: A maintainer relicensing to Apache-2.0 could...
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested wording (optional)
+      description: If you have a fix, propose it. Please keep the change as small as possible.

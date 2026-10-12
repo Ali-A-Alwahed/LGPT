@@ -5,13 +5,13 @@
 ------------------------------------------------------------------------
 
 **Developer: Ali A Alwahed**
-**GitHub Profile: https://github.com/Ali-A-2026**
+**GitHub Profile: https://github.com/Ali-A-Alwahed**
 
 **Organization: Sonzaistudios**
 **Website: https://sonzaistudios.org**
 
 **Copyright (c) 2026 LGPT v1.0 All rights reserved**
-**GitHub Link: https://github.com/Ali-A-2026/LGPT**
+**GitHub Link: https://github.com/Ali-A-Alwahed/LGPT**
 
 ------------------------------------------------------------------------
 
@@ -149,7 +149,7 @@ reasonable location appropriate to the type of software:
     Ali A Alwahed
 
     GitHub Profile:
-    https://github.com/Ali-A-2026
+    https://github.com/Ali-A-Alwahed
 
     Organization:
     Sonzaistudios
@@ -161,10 +161,10 @@ reasonable location appropriate to the type of software:
     LGPT License v1.0
 
     GitHub Link:
-    https://github.com/Ali-A-2026/LGPT
+    https://github.com/Ali-A-Alwahed/LGPT
     
-    Special Thanks:
-    Ali A Alwahed for creating the LGPT License and establishing the
+    Special Thanks To:
+    Ali A Alwahed for creating this LGPT License and establishing the
     licensing framework used by this software.
 
 For small libraries, embedded components, command-line tools, or environments
@@ -556,7 +556,7 @@ See LICENSE for the full license text.
 **Copyright Holder:** Ali A Alwahed  
 **Organization:** Sonzaistudios  
 **Website:** https://sonzaistudios.org  
-**GitHub:** https://github.com/Ali-A-2026/LGPT
+**GitHub:** https://github.com/Ali-A-Alwahed/LGPT
 
 ------------------------------------------------------------------------
 

@@ -1,0 +1,116 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    name: Validate repository
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run repository checks
+        run: ./scripts/ci-check.sh
+
+      - name: Verify the canonical license digest
+        run: |
+          expected="$(awk '/LICENSE\.txt$/ {print $1; exit}' SHA256SUMS)"
+          actual="$(sha256sum LICENSE.txt | awk '{print $1}')"
+          if [ "$expected" != "$actual" ]; then
+            echo "::error::LICENSE.txt digest mismatch — run ./scripts/refresh-checksums.sh"
+            exit 1
+          fi
+          echo "LICENSE.txt digest ok: $actual"
+
+  shellcheck:
+    name: Lint shell scripts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: Run shellcheck
+        run: |
+          # SC2086 is intentionally disabled: the installer relies on deliberate
+          # word splitting in the fetch helpers. All other checks stay on.
+          shellcheck --severity=warning --exclude=SC2086 scripts/*.sh
+
+  license-text:
+    name: License text integrity
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Structural checks on LICENSE.txt
+        run: |
+          sections="$(grep -c '^## [0-9]\+\.' LICENSE.txt)"
+          if [ "$sections" -ne 31 ]; then
+            echo "::error::Expected 31 numbered sections, found $sections"
+            exit 1
+          fi
+          echo "31 sections present"
+
+      - name: Confirm the text is not modified relative to its own digest
+        run: sha256sum -c SHA256SUMS --ignore-missing
+
+  self-test:
+    name: Installer self-test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Exercise the installer's safety guarantees
+        run: |
+          set -euo pipefail
+          work="$(mktemp -d)"
+          trap 'rm -rf "$work"' EXIT
+
+          echo "MIT License" > "$work/LICENSE.txt"
+          # A foreign license must never be destroyed, not even with --yes.
+          if ./scripts/install-lgpt.sh --dir "$work" --yes >/dev/null 2>&1; then
+            echo "::error::Installer overwrote a foreign LICENSE file"
+            exit 1
+          fi
+          grep -q "MIT License" "$work/LICENSE.txt" || {
+            echo "::error::Foreign LICENSE was clobbered"
+            exit 1
+          }
+          echo "Foreign license protected"
+
+          mkdir -p "$work/clean"
+          ./scripts/install-lgpt.sh --dir "$work/clean" --name test --yes >/dev/null
+          test -f "$work/clean/LICENSE.txt"
+          test -f "$work/clean/NOTICE"
+          echo "Clean install ok"
+
+          ./scripts/install-lgpt.sh --dir "$work/clean" --uninstall --yes >/dev/null
+          test ! -f "$work/clean/LICENSE.txt"
+          test ! -f "$work/clean/NOTICE"
+          echo "Uninstall ok"
+
+  action-smoke:
+    name: Action smoke test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Load the action entrypoint
+        run: |
+          node --check dist/index.js
+          # The action must run with no dependencies installed.
+          test ! -d node_modules
+          echo "Action entrypoint loads cleanly"
